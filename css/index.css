@@ -1,0 +1,83 @@
+p {
+  font-size: 1.6rem;
+}
+* {
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  position: 0;
+  background-color: #262749;
+  height: 50px;
+  text-align: center;
+  align-items: center;
+}
+.nav__child__link {
+  font-size: 2rem;
+  color: white;
+  padding: 0 5px;
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.header {
+  background-image: url("../images/architecture-beautiful-exterior-106399.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 660px;
+  background-size: 100%;
+}
+.header__text {
+  font-size: 6rem;
+}
+.quotes {
+  background-image: url('../images/blue-brick-wall-chair-1282315.jpg');
+  background-repeat: no-repeat;
+  border: 1px solid red;
+  height: 400px;
+}
+.quotes__box {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.quotes__box__child {
+  border: 1px solid black;
+  height: 100px;
+  justify-content: center;
+  text-align: center;
+  background: #D3DCEC;
+  width: 30%;
+  height: 250px;
+}
+.mid__page {
+  display: flex;
+  height: 300px;
+  align-content: center;
+  width: 60%;
+  margin: 0 auto;
+}
+.mid__page__child {
+  width: 45%;
+}
+.mid__page__child .fas {
+  height: 50px;
+  width: 50px;
+}
+.yo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 190px;
+  padding: 5px;
+}
