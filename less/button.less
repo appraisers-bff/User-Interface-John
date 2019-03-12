@@ -1,0 +1,28 @@
+.button {
+    width: 60%;
+    margin: 0 auto;
+    height: 180px;
+    position: relative;
+    border-bottom: 1px dashed @dark-slate-gray;
+     
+    &__button {
+        position: absolute;
+        top: 55px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 250px;
+        height: 60px;
+        background: @dark-slate-gray;
+        color: @white;
+        font-weight: 900;
+        border-radius: 10px;
+        font-size: 3rem;
+        border-color: @sienna;
+
+        &:hover {
+            background: @white;
+            color: @dark-slate-gray;
+            font-weight: 900;
+        }
+    }
+}

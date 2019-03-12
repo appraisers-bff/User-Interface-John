@@ -89,13 +89,13 @@ html {
   color: white;
   position: absolute;
   top: 620px;
-  left: 655px;
+  left: 645px;
 }
 .header__button {
   color: white;
   position: absolute;
   top: 684px;
-  left: 50%;
+  left: 49%;
   transform: translateX(-50%);
   width: 250px;
   height: 60px;
@@ -114,24 +114,33 @@ html {
 .quotes {
   background-image: url('../images/blue-brick-wall-chair.jpg');
   background-repeat: no-repeat;
-  border: 1px solid red;
-  height: 600px;
+  height: 400px;
   background-size: cover;
+  display: flex;
+  position: relative;
 }
 .quotes__box {
   display: flex;
+  align-items: center;
   width: 60%;
   margin: 0 auto;
   justify-content: space-between;
 }
 .quotes__box__child {
-  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
   height: 100px;
   justify-content: center;
   text-align: center;
   background: #D3DCEC;
   width: 30%;
   height: 250px;
+  border-radius: 10px;
+  border: 2px solid #262749;
+}
+.quotes__box__child__p {
+  font-size: 2rem;
+  padding: 0 4px;
 }
 .mid__page {
   display: flex;
@@ -140,13 +149,15 @@ html {
   width: 60%;
   margin: 0 auto;
   vertical-align: middle;
+  border-left: 1px dotted #262749;
+  border-right: 1px dashed #262749;
 }
 .mid__page__child {
   width: 48%;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0 10px;
 }
 .mid__page__child__title {
   padding-bottom: 10px;
@@ -163,4 +174,59 @@ html {
   width: 75px;
   padding: 0 5px;
   margin: 0 auto;
+}
+.button {
+  width: 60%;
+  margin: 0 auto;
+  height: 180px;
+  position: relative;
+  border-bottom: 1px dashed #262749;
+}
+.button__button {
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  height: 60px;
+  background: #262749;
+  color: white;
+  font-weight: 900;
+  border-radius: 10px;
+  font-size: 3rem;
+  border-color: #95813B;
+}
+.button__button:hover {
+  background: white;
+  color: #262749;
+  font-weight: 900;
+}
+.footer {
+  display: flex;
+  margin: 0 auto;
+  width: 60%;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}
+.footer__child {
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+  justify-content: top;
+  text-align: center;
+}
+.footer__child__title {
+  font-size: 2rem;
+}
+.footer__child__link {
+  text-decoration: none;
+  color: #262749;
+  font-size: 1.6rem;
+}
+.footer__child__link2 {
+  margin: 5px 0;
+}
+.footer i {
+  font-size: 5rem;
 }

@@ -1,27 +1,39 @@
 .quotes {
     background-image: url('../images/blue-brick-wall-chair.jpg');
     background-repeat: no-repeat;
-    border: 1px solid red;
-    height: 600px;
+    // border: 1px solid red;
+    height: 400px;
     background-size: cover;
+    display: flex;
+    position: relative;
+    
 
     &__box {
         display: flex;
+        align-items: center;
         width: 60%;
         margin: 0 auto; 
         justify-content: space-between;
+        
+        
 
         &__child {
-            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            // border: 1px solid black;
             height: 100px;
             justify-content: center;
             text-align: center;
             background: @lighter-steel-blue;
             width: 30%;
             height: 250px;
+            border-radius: 10px;
+            border: 2px solid @dark-slate-gray;
+            
 
             &__p {
-
+                font-size: 2rem;
+                padding: 0 4px;
             }
         }
     }
