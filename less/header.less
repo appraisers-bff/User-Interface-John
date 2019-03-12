@@ -1,0 +1,43 @@
+.header {
+    background-image: url("../images/architecture-beautiful-exterior.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 900px;
+    // background-position: center;
+    background-size: cover;
+    // background-size: auto 1000px, auto;
+    background-attachment: fixed;
+    position: relative;
+    // margin-top: 50px;
+    background-position: center top, 50% 113%;
+
+    &__text {
+        font-size: 5.2rem;
+        color: @white;
+        position: absolute;
+        top: 620px;
+        left: 655px;
+    }
+
+    &__button {
+        color: @white;
+        position: absolute;
+        top: 684px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 250px;
+        height: 60px;
+        background: @white;
+        color: @dark-slate-gray;
+        font-weight: 900;
+        border-radius: 10px;
+        font-size: 3rem;
+        border-color: @sienna;
+
+        &:hover {
+            background: @dark-slate-gray;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
