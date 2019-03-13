@@ -5,6 +5,11 @@
     position: relative;
     border-bottom: 1px dashed @dark-slate-gray;
      
+    @media @mobile {
+        height: 200px;
+        border-bottom: 0;
+    }
+
     &__button {
         position: absolute;
         top: 55px;
@@ -18,6 +23,11 @@
         border-radius: 10px;
         font-size: 3rem;
         border-color: @sienna;
+
+        @media @mobile {
+            width: 400px;
+            height: 100px;
+        }
 
         &:hover {
             background: @white;

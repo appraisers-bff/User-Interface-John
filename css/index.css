@@ -35,10 +35,8 @@ html {
   position: fixed;
   z-index: 999;
   margin-top: 0;
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
   left: 50%;
   transform: translateX(-50%);
   padding-right: 20px;
@@ -52,7 +50,6 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    left: 0;
     height: auto;
     border-radius: 0;
     position: static;
@@ -89,12 +86,14 @@ html {
 }
 .nav__child__name {
   font-size: 3.5rem;
+  text-decoration: none;
+  color: white;
 }
 .nav__child__two {
   width: 40%;
   height: 30px;
-  text-align: center;
   vertical-align: middle;
+  justify-content: space-around;
 }
 @media ( max-width:500px ) {
   .nav__child__two {
@@ -134,30 +133,34 @@ html {
   background-repeat: no-repeat;
   width: 100%;
   height: 900px;
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
+  background-size: auto 1000px, auto;
   background-position: center top, 50% 113%;
+}
+@media ( max-width:500px ) {
+  .header {
+    width: 100%;
+  }
 }
 .header__text {
   font-size: 4.9rem;
   color: white;
   position: absolute;
-  top: 620px;
+  top: 650px;
   left: 645px;
 }
 @media ( max-width:500px ) {
   .header__text {
     display: flex;
     text-align: center;
-    left: 0%;
-    top: 250px;
+    left: 3%;
+    top: 390px;
+    line-height: 1;
   }
 }
 .header__button {
   color: white;
   position: absolute;
-  top: 684px;
+  top: 714px;
   left: 49%;
   transform: translateX(-50%);
   width: 250px;
@@ -169,6 +172,11 @@ html {
   font-size: 3rem;
   border-color: #95813B;
 }
+@media ( max-width:500px ) {
+  .header__button {
+    top: 742px;
+  }
+}
 .header__button:hover {
   background: #262749;
   color: white;
@@ -177,10 +185,15 @@ html {
 .quotes {
   background-image: url('../images/blue-brick-wall-chair.jpg');
   background-repeat: no-repeat;
-  height: 400px;
+  height: 600px;
   background-size: cover;
   display: flex;
   position: relative;
+}
+@media ( max-width:500px ) {
+  .quotes {
+    height: auto;
+  }
 }
 .quotes__box {
   display: flex;
@@ -193,6 +206,13 @@ html {
   margin: 0 auto;
   justify-content: space-between;
 }
+@media ( max-width:500px ) {
+  .quotes__box__1 {
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+}
 .quotes__box__1__child {
   display: flex;
   flex-direction: column;
@@ -204,6 +224,13 @@ html {
   height: 250px;
   border-radius: 10px;
   border: 2px solid #262749;
+}
+@media ( max-width:500px ) {
+  .quotes__box__1__child {
+    width: 88%;
+    margin: 2%;
+    height: 145px;
+  }
 }
 .quotes__box__1__child__p {
   font-size: 2rem;
@@ -219,6 +246,16 @@ html {
   border-left: 1px dashed #A9AFD5;
   border-right: 1px dashed #A9AFD5;
 }
+@media ( max-width:500px ) {
+  .mid__page {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    border-left: 0;
+    border-right: 0;
+  }
+}
 .mid__page__child {
   width: 48%;
   display: flex;
@@ -226,12 +263,28 @@ html {
   justify-content: center;
   margin: 0 10px;
 }
+@media ( max-width:500px ) {
+  .mid__page__child {
+    width: 100%;
+  }
+}
 .mid__page__child__title {
   padding-bottom: 10px;
+}
+@media ( max-width:500px ) {
+  .mid__page__child__title {
+    margin: 0 auto;
+  }
 }
 .mid__page__childimg {
   display: flex;
   align-items: center;
+}
+@media ( max-width:500px ) {
+  .mid__page__childimg {
+    display: flex;
+    flex-direction: row;
+  }
 }
 .mid__page__child .fast {
   display: flex;
@@ -242,12 +295,37 @@ html {
   padding: 0 5px;
   margin: 0 auto;
 }
+@media ( max-width:500px ) {
+  .mid__page__child .fast {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media ( max-width:500px ) {
+  .mid__page__child__p {
+    padding: 0 5px;
+    margin: 0 auto;
+  }
+}
+@media ( max-width:500px ) {
+  .yo {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+  }
+}
 .button {
   width: 60%;
   margin: 0 auto;
   height: 180px;
   position: relative;
   border-bottom: 1px dashed #262749;
+}
+@media ( max-width:500px ) {
+  .button {
+    height: 200px;
+    border-bottom: 0;
+  }
 }
 .button__button {
   position: absolute;
@@ -263,6 +341,12 @@ html {
   font-size: 3rem;
   border-color: #95813B;
 }
+@media ( max-width:500px ) {
+  .button__button {
+    width: 400px;
+    height: 100px;
+  }
+}
 .button__button:hover {
   background: white;
   color: #262749;
@@ -274,11 +358,23 @@ html {
   padding-top: 10px;
   margin-bottom: 20px;
 }
+@media ( max-width:500px ) {
+  .footer {
+    height: auto;
+    width: 100%;
+    border-top: 1px dashed black;
+  }
+}
 .footer__box {
   width: 60%;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+}
+@media ( max-width:500px ) {
+  .footer__box {
+    width: 100%;
+  }
 }
 .footer__box__child {
   display: flex;
@@ -287,17 +383,38 @@ html {
   justify-content: top;
   text-align: center;
 }
+@media ( max-width:500px ) {
+  .footer__box__child {
+    width: 32%;
+  }
+}
 .footer__box__child__title {
   font-size: 2rem;
+}
+@media ( max-width:500px ) {
+  .footer__box__child__title {
+    text-align: center;
+  }
 }
 .footer__box__child__link {
   text-decoration: none;
   color: #262749;
   font-size: 1.6rem;
 }
+@media ( max-width:500px ) {
+  .footer__box__child__link {
+    text-align: center;
+  }
+}
 .footer__box__child__link2 {
   margin: 5px 0;
 }
 .footer i {
   font-size: 5rem;
+}
+@media ( max-width:500px ) {
+  .childOne {
+    display: flex;
+    justify-content: space-between;
+  }
 }
