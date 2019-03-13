@@ -37,8 +37,6 @@ html {
   margin-top: 0;
   width: 100%;
   margin: 0 auto;
-  left: 50%;
-  transform: translateX(-50%);
   padding-right: 20px;
   padding-left: 20px;
   font-family: 'Nunito';
@@ -133,20 +131,22 @@ html {
   background-repeat: no-repeat;
   width: 100%;
   height: 900px;
-  background-size: auto 1000px, auto;
+  background-size: auto 1050px, auto;
+  position: relative;
   background-position: center top, 50% 113%;
 }
 @media ( max-width:500px ) {
   .header {
     width: 100%;
+    height: 400px;
   }
 }
 .header__text {
   font-size: 4.9rem;
   color: white;
   position: absolute;
-  top: 650px;
-  left: 645px;
+  top: 675px;
+  left: 725px;
 }
 @media ( max-width:500px ) {
   .header__text {
@@ -160,7 +160,7 @@ html {
 .header__button {
   color: white;
   position: absolute;
-  top: 714px;
+  top: 745px;
   left: 49%;
   transform: translateX(-50%);
   width: 250px;
@@ -174,7 +174,7 @@ html {
 }
 @media ( max-width:500px ) {
   .header__button {
-    top: 742px;
+    top: 590px;
   }
 }
 .header__button:hover {
@@ -417,4 +417,27 @@ html {
     display: flex;
     justify-content: space-between;
   }
+}
+.teamMembers {
+  padding-top: 85px;
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  height: auto;
+}
+.teamMembers__child {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.teamMembers__child__item {
+  border: 1px solid black;
+  width: 30%;
+  border-radius: 10px;
+  background-color: #262749;
+  color: white;
+}
+.teamMembers__child__item__img {
+  width: 50%;
+  border-radius: 10px;
 }

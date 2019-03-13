@@ -5,22 +5,23 @@
     height: 900px;
     // background-position: center;
     // background-size: cover;
-    background-size: auto 1000px, auto;
+    background-size: auto 1050px, auto;
     // background-attachment: fixed;
-    // position: relative;
+    position: relative;
     // margin-top: 50px;
     background-position: center top, 50% 113%;
 
     @media @mobile {
         width: 100%;
+        height: 400px;
     }
 
     &__text {
         font-size: 4.9rem;
         color: @white;
         position: absolute;
-        top: 650px;
-        left: 645px;
+        top: 675px;
+        left: 725px;
 
         @media @mobile {
             display: flex;
@@ -37,7 +38,7 @@
     &__button {
         color: @white;
         position: absolute;
-        top: 714px;
+        top: 745px;
         left: 49%;
         transform: translateX(-50%);
         width: 250px;
@@ -50,7 +51,7 @@
         border-color: @sienna;
 
         @media @mobile {
-            top: 742px;
+            top: 590px;
         }
 
         &:hover {
