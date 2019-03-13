@@ -11,12 +11,26 @@
     // margin-top: 50px;
     background-position: center top, 50% 113%;
 
+    @media @mobile {
+        
+    }
+
     &__text {
-        font-size: 5.2rem;
+        font-size: 4.9rem;
         color: @white;
         position: absolute;
         top: 620px;
         left: 645px;
+
+        @media @mobile {
+            display: flex;
+            text-align: center;
+            // position: static;
+            left: 0%; 
+            // translateX(-50%);
+            top: 250px;
+
+        }
     }
 
     &__button {
@@ -33,6 +47,10 @@
         border-radius: 10px;
         font-size: 3rem;
         border-color: @sienna;
+
+        @media @mobile {
+        
+        }
 
         &:hover {
             background: @dark-slate-gray;

@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 * {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 p {
   font-size: 1.6rem;
@@ -45,10 +45,32 @@ html {
   padding-left: 20px;
   font-family: 'Nunito';
   color: white;
-  fontSize: 30px;
+}
+@media ( max-width:500px ) {
+  .nav {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    left: 0;
+    height: auto;
+    border-radius: 0;
+    position: static;
+    margin: 0 auto;
+    padding: 0;
+  }
 }
 .nav__child1 {
   width: 195px;
+}
+@media ( max-width:500px ) {
+  .nav__child1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    vertical-align: 0;
+    width: 100%;
+  }
 }
 .nav__child {
   display: flex;
@@ -58,6 +80,13 @@ html {
   vertical-align: middle;
   color: white;
 }
+@media ( max-width:500px ) {
+  .nav__child {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .nav__child__name {
   font-size: 3.5rem;
 }
@@ -66,6 +95,12 @@ html {
   height: 30px;
   text-align: center;
   vertical-align: middle;
+}
+@media ( max-width:500px ) {
+  .nav__child__two {
+    width: 120%;
+    height: auto;
+  }
 }
 .nav__child__link {
   align-content: center;
@@ -83,6 +118,17 @@ html {
   background: #A9AFD5;
   color: #262749;
 }
+@media ( max-width:500px ) {
+  .nav__child__link {
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    border-bottom: none;
+    padding: 10px 0;
+    font-size: 3rem;
+    height: auto;
+  }
+}
 .header {
   background-image: url("../images/architecture-beautiful-exterior.jpg");
   background-repeat: no-repeat;
@@ -94,11 +140,19 @@ html {
   background-position: center top, 50% 113%;
 }
 .header__text {
-  font-size: 5.2rem;
+  font-size: 4.9rem;
   color: white;
   position: absolute;
   top: 620px;
   left: 645px;
+}
+@media ( max-width:500px ) {
+  .header__text {
+    display: flex;
+    text-align: center;
+    left: 0%;
+    top: 250px;
+  }
 }
 .header__button {
   color: white;

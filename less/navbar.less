@@ -22,11 +22,38 @@
     padding-left: 20px;
     font-family: 'Nunito';
     color: white;
-    fontSize: 30px;
+    // fontSize: 30px;
+
+    @media @mobile {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        // translateX(0);
+        left: 0;
+        height: auto;
+        border-radius: 0;
+        position: static;
+        margin: 0 auto;
+        padding: 0;
+        // border: 1px solid green;
+        // vertical-align: 0;
+
+
+    }
 
     &__child1 {
         width: 195px;
         // border:1px solid white;
+    
+        @media @mobile {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            // border: 1px solid red;
+            vertical-align: 0;
+            width: 100%;
+        }
     }
 
     &__child {
@@ -37,6 +64,14 @@
         vertical-align: middle;
         color: @white;
         
+        @media @mobile {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        
+
+        }
+
         &__name {
             font-size: 3.5rem;
         }
@@ -47,11 +82,27 @@
             height: 30px;
             text-align: center;
             vertical-align: middle;
+
+            @media @mobile {
+                width: 120%;
+                // border: 1px solid orange;
+                height: auto;
+            }
         }
 
         &__link {
             .a-tag();
-           
+            @media @mobile {
+                border-left: none;
+                border-right: none;
+                border-radius: 0;
+                border-bottom: none;
+                padding: 10px 0;
+                font-size: 3rem;
+                height: auto;
+                // display: flex;
+                // justify-content: flex-end;
+            }
         }
     }
 }
