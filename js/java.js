@@ -60,3 +60,17 @@ button.addEventListener('mouseout', function(event) {
 })
 
 
+// nav
+const linkBorder = document.querySelectorAll('a');
+
+linkBorder.forEach(function(currentValue) {
+    currentValue.addEventListener('mouseover', function(event) {
+        event.target.style.backgroundColor = '#A9AFD5';
+        event.target.style.color = '#262749';
+    })
+    
+    currentValue.addEventListener('mouseout', function(event) {
+        event.target.style.backgroundColor = '#262749';
+        event.target.style.color = 'white';
+    })
+})

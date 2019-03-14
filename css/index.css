@@ -113,10 +113,6 @@ html {
   padding-top: 1px;
   font-weight: 400;
 }
-.nav__child__link:hover {
-  background: #A9AFD5;
-  color: #262749;
-}
 @media ( max-width:500px ) {
   .nav__child__link {
     border-left: none;
