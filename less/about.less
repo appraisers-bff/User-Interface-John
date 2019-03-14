@@ -1,24 +1,34 @@
 .teamMembers {
+    background-image: url('../images/blue-brick-wall-chair.jpg');
     padding-top: 85px;
     display: flex;
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
     height: auto;
+    margin-bottom: 25px;
 
     &__title {
-
+        font-size: 6rem;
+        text-align: center;
+        margin: 0 auto;
     }
 
     &__child {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        width: 60%;
+        margin: 0 auto;
             
 
 
         &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             border: 1px solid black;
-            width: 30%;
+            width: 45%;
+            margin: 1%;
             border-radius: 10px;
             background-color: @dark-slate-gray;
             color: @white;
@@ -26,6 +36,9 @@
             &__img {
                 width: 50%;
                 border-radius: 10px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                margin-top: 10px;
             }
 
             &__title {
@@ -33,8 +46,31 @@
             }
 
             &__p {
-
+                margin-bottom: 10px;
             }
         }
     }
+}
+
+.title {
+    padding-top: 80px;
+    height: 50px;
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+    // text-decoration: underline;
+
+
+    &__title {
+        font-size: 6rem;
+        color: @slate-gray;
+    }
+}
+
+
+.last-card {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    // width: 20%;
 }

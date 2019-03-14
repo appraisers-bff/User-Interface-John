@@ -146,15 +146,19 @@ html {
   color: white;
   position: absolute;
   top: 675px;
-  left: 725px;
+  left: 640px;
 }
 @media ( max-width:500px ) {
   .header__text {
     display: flex;
     text-align: center;
     left: 3%;
-    top: 390px;
+    top: 100px;
     line-height: 1;
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 10px;
+    border: 1px solid black;
   }
 }
 .header__button {
@@ -174,7 +178,7 @@ html {
 }
 @media ( max-width:500px ) {
   .header__button {
-    top: 590px;
+    top: 270px;
   }
 }
 .header__button:hover {
@@ -194,6 +198,9 @@ html {
   .quotes {
     height: auto;
   }
+}
+.quotes__title {
+  margin: 0 auto;
 }
 .quotes__box {
   display: flex;
@@ -319,7 +326,6 @@ html {
   margin: 0 auto;
   height: 180px;
   position: relative;
-  border-bottom: 1px dashed #262749;
 }
 @media ( max-width:500px ) {
   .button {
@@ -366,6 +372,7 @@ html {
   }
 }
 .footer__box {
+  border-top: 1px dashed black;
   width: 60%;
   display: flex;
   justify-content: space-between;
@@ -419,20 +426,33 @@ html {
   }
 }
 .teamMembers {
+  background-image: url('../images/blue-brick-wall-chair.jpg');
   padding-top: 85px;
   display: flex;
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
   height: auto;
+  margin-bottom: 25px;
+}
+.teamMembers__title {
+  font-size: 6rem;
+  text-align: center;
+  margin: 0 auto;
 }
 .teamMembers__child {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  width: 60%;
+  margin: 0 auto;
 }
 .teamMembers__child__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border: 1px solid black;
-  width: 30%;
+  width: 45%;
+  margin: 1%;
   border-radius: 10px;
   background-color: #262749;
   color: white;
@@ -440,4 +460,26 @@ html {
 .teamMembers__child__item__img {
   width: 50%;
   border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: 10px;
+}
+.teamMembers__child__item__p {
+  margin-bottom: 10px;
+}
+.title {
+  padding-top: 80px;
+  height: 50px;
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+}
+.title__title {
+  font-size: 6rem;
+  color: #64668D;
+}
+.last-card {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
 }
