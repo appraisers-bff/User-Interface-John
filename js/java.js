@@ -61,7 +61,7 @@ button.addEventListener('mouseout', function(event) {
 
 
 // nav
-const linkBorder = document.querySelectorAll('a');
+const linkBorder = document.querySelectorAll('.nav__child__link');
 
 linkBorder.forEach(function(currentValue) {
     currentValue.addEventListener('mouseover', function(event) {
