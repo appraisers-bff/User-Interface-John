@@ -11,15 +11,50 @@
     z-index: 999;
     // width: 100%;
     margin-top: 0;
-    width: 85%;
+    width: 100%;
     margin: 0 auto;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    left: 50%; 
+    // border-bottom-left-radius: 10px;
+    // border-bottom-right-radius: 10px;
+    // left: 50%; 
     // top: 50%;
-    transform: translateX(-50%);
+    // transform: translateX(-50%);
     padding-right: 20px;
     padding-left: 20px;
+    font-family: 'Nunito';
+    color: white;
+    // fontSize: 30px;
+
+    @media @mobile {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        // translateX(0);
+        // left: 100%;
+        height: auto;
+        border-radius: 0;
+        position: static;
+        margin: 0 auto;
+        padding: 0;
+        // border: 1px solid green;
+        // vertical-align: 0;
+
+
+    }
+
+    &__child1 {
+        width: 195px;
+        // border:1px solid white;
+    
+        @media @mobile {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            // border: 1px solid red;
+            vertical-align: 0;
+            width: 100%;
+        }
+    }
 
     &__child {
         display: flex;
@@ -29,19 +64,49 @@
         vertical-align: middle;
         color: @white;
         
+        @media @mobile {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
         
+
+        }
+
+        &__name {
+            font-size: 3.5rem;
+            text-decoration: none;
+            color: @white;
+        }
         // width: 40%;
 
         &__two {
             width: 40%;
             height: 30px;
-            text-align: center;
-    vertical-align: middle;
+            // text-align: center;
+            vertical-align: middle;
+            justify-content: space-around;
+            
+
+            @media @mobile {
+                width: 120%;
+                // border: 1px solid orange;
+                height: auto;
+            }
         }
 
         &__link {
             .a-tag();
-           
+            @media @mobile {
+                border-left: none;
+                border-right: none;
+                border-radius: 0;
+                border-bottom: none;
+                padding: 10px 0;
+                font-size: 3rem;
+                height: auto;
+                // display: flex;
+                // justify-content: flex-end;
+            }
         }
     }
 }

@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:900" rel="stylesheet"> 
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700" rel="stylesheet"> -->
     <link rel="stylesheet" href="./css/index.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -24,15 +26,15 @@
         
         <!-- NavBar -->
         <nav class="nav">
-            <div class="nav__child">
-                <img src="" alt="">
-                <i class="fas fa-award"></i>
+            <div class="nav__child nav__child1">
+                <img src="./images/logo.svg" alt="Logo">
+                <p class="nav__child__name">Worther</p>
             </div>
             <div class="nav__child nav__child__two">
-                <a class="nav__child__link" href="">Our Team</a>            
-                <a class="nav__child__link" href="">About</a>
-                <a class="nav__child__link" href="">Log In</a>
-                <a class="nav__child__link" href="">Sign Up</a>
+                <a class="nav__child__link" href="./our_team.html">Our Team</a>            
+                <!-- <a class="nav__child__link" href="">About</a> -->
+                <a class="nav__child__link" href="https://worther.netlify.com/login">Log In</a>
+                <a class="nav__child__link" href="https://worther.netlify.com/signup">Sign Up</a>
             </div>
         </nav>
         
@@ -65,29 +67,92 @@
         
         <!-- Carousel of Quotes -->
         <section class="quotes">
-            <div class="quotes__box">
-                <div class="quotes__box__child">
-                    <p class="quotes__box__child__p">With tail in the air roll over and sun my belly yet make meme, make cute face. Eat the fat cats food.</p>
+            <!-- <h2 class="quotes__title">Product Reviews</h2> -->
+            <div class="quotes__box wrapper">
+                <div class="quotes__box__1 carousel" data-target="carousel">
+                    
+                        <div data-aos="flip-up" class="quotes__box__1__child 1" class="card" data-target="card">
+                            <p class="quotes__box__1__child__p">Something something appraised value.  Something something savings yearly!  $4000 something!</p>
+                            <p class="quotes__box__1__child__p">- Anonymous User</p>
+                        </div>
+                        <div data-aos="flip-down" class="quotes__box__1__child two" class="card" data-target="card">
+                            <p class="quotes__box__1__child__p">If you don't check your appraisal you are doing yourself a disservice!  Savings galore!</p>
+                            <p class="quotes__box__1__child__p">- Anonymous User</p>
+                        </div>
+                        <div data-aos="flip-up" class="quotes__box__1__child three" class="card" data-target="card">
+                            <p class="quotes__box__1__child__p">This product is so great.  I was overpaying for years with regards to my real estate taxes.  I saved $900 a year!</p>
+                            <p class="quotes__box__1__child__p">- Anonymous User</p>
+                        </div>
+                    
+<!--                   
+                        <div data-aos="flip-up" class="quotes__box__1__child" class="card" data-target="card">
+                            <p class="quotes__box__1__child__p">With tail in the air roll over and sun my belly yet make meme, make cute face. Eat the fat cats food.</p>
+                            <p class="quotes__box__1__child__p">- Anonymous User</p>
+                        </div>
+                        <div data-aos="flip-up" class="quotes__box__1__child" class="card" data-target="card">
+                            <p class="quotes__box__1__child__p">With tail in the air roll over and sun my belly yet make meme, make cute face. Eat the fat cats food.</p>
+                            <p class="quotes__box__1__child__p">- Anonymous User</p>
+                        </div>
+                        <div data-aos="flip-up" class="quotes__box__1__child" class="card" data-target="card">
+                            <p class="quotes__box__1__child__p">With tail in the air roll over and sun my belly yet make meme, make cute face. Eat the fat cats food.</p>
+                            <p class="quotes__box__1__child__p">- Anonymous User</p>
+                        </div>
+                  
+                    
+                        <div data-aos="flip-up" class="quotes__box__1__child" class="card" data-target="card">
+                            <p class="quotes__box__1__child__p">With tail in the air roll over and sun my belly yet make meme, make cute face. Eat the fat cats food.</p>
+                            <p class="quotes__box__1__child__p">- Anonymous User</p>
+                        </div>
+                        <div data-aos="flip-up" class="quotes__box__1__child" class="card" data-target="card">
+                            <p class="quotes__box__1__child__p">With tail in the air roll over and sun my belly yet make meme, make cute face. Eat the fat cats food.</p>
+                            <p class="quotes__box__1__child__p">- Anonymous User</p>
+                        </div>
+                        <div data-aos="flip-up" class="quotes__box__1__child" class="card" data-target="card">
+                            <p class="quotes__box__1__child__p">With tail in the air roll over and sun my belly yet make meme, make cute face. Eat the fat cats food.</p>
+                            <p class="quotes__box__1__child__p">- Anonymous User</p>
+                         -->
+                    </div>
                 </div>
-                <div class="quotes__box__child">
-                    <p class="quotes__box__child__p">With tail in the air roll over and sun my belly yet make meme, make cute face. Eat the fat cats food.</p>
-                </div>
-                <div class="quotes__box__child">
-                    <p class="quotes__box__child__p">With tail in the air roll over and sun my belly yet make meme, make cute face. Eat the fat cats food.</p>
-                </div>
-                <!-- <div class="quotes__box__child">
-                    <p class="quotes__box__child__p">With tail in the air roll over and sun my belly yet make meme, make cute face. Eat the fat cats food.</p>
+                <!-- <div class="button-wrapper">
+                    <button data-action="slideLeft"><</button>
+                    <button data-action="slideRight">></button>
                 </div> -->
             </div>
         </section>
         
+        <!-- Try it out -->
+        <section class="button">
+            <button class="button__button">Get Your Value!</button>
+        </section>
         
         
         
         
         <!-- Footer -->
         <section class="footer">
-            
+            <div class="footer__box">
+                <div class="footer__box__child childOne">
+                    <h3 class="footer__box__child__title">Worther</h3>
+                    <a class="footer__box__child__link" href="./our_team.html">Meet Our Team</a>
+                    <a class="footer__box__child__link" href="">Careers</a>
+                    <!-- <a class="footer__box__child__link" href="">Help</a> -->
+                    <a class="footer__box__child__link" href="">Our Mission</a>
+                    <a class="footer__box__child__link" href="">Terms</a>
+                    <a class="footer__box__child__link" href="">Policy</a>
+                </div>
+                <div class="footer__box__child">
+                    <h3 class="footer__box__child__title">Value Estimation</h3>
+                    <a class="footer__box__child__link footer__box__child__link2" href="">Why Worther?</a>
+                    <a class="footer__box__child__link footer__box__child__link2" href="">Success Stories</a>
+                    <a class="footer__box__child__link footer__box__child__link2" href="">Estimation Process</a>
+                    <a class="footer__box__child__link footer__box__child__link2" href="">Help</a>
+                </div>
+                <div class="footer__box__child childOne">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter-square"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
         </section>
         
     </div>
@@ -96,4 +161,7 @@
     <script>
       AOS.init();
     </script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
 </body>

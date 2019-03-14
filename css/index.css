@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 * {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 p {
   font-size: 1.6rem;
@@ -35,14 +35,37 @@ html {
   position: fixed;
   z-index: 999;
   margin-top: 0;
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  left: 50%;
-  transform: translateX(-50%);
   padding-right: 20px;
   padding-left: 20px;
+  font-family: 'Nunito';
+  color: white;
+}
+@media ( max-width:500px ) {
+  .nav {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+    border-radius: 0;
+    position: static;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+.nav__child1 {
+  width: 195px;
+}
+@media ( max-width:500px ) {
+  .nav__child1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    vertical-align: 0;
+    width: 100%;
+  }
 }
 .nav__child {
   display: flex;
@@ -52,11 +75,29 @@ html {
   vertical-align: middle;
   color: white;
 }
+@media ( max-width:500px ) {
+  .nav__child {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.nav__child__name {
+  font-size: 3.5rem;
+  text-decoration: none;
+  color: white;
+}
 .nav__child__two {
   width: 40%;
   height: 30px;
-  text-align: center;
   vertical-align: middle;
+  justify-content: space-around;
+}
+@media ( max-width:500px ) {
+  .nav__child__two {
+    width: 120%;
+    height: auto;
+  }
 }
 .nav__child__link {
   align-content: center;
@@ -74,28 +115,57 @@ html {
   background: #A9AFD5;
   color: #262749;
 }
+@media ( max-width:500px ) {
+  .nav__child__link {
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    border-bottom: none;
+    padding: 10px 0;
+    font-size: 3rem;
+    height: auto;
+  }
+}
 .header {
   background-image: url("../images/architecture-beautiful-exterior.jpg");
   background-repeat: no-repeat;
   width: 100%;
   height: 900px;
-  background-size: cover;
-  background-attachment: fixed;
+  background-size: auto 1050px, auto;
   position: relative;
   background-position: center top, 50% 113%;
 }
+@media ( max-width:500px ) {
+  .header {
+    width: 100%;
+    height: 400px;
+  }
+}
 .header__text {
-  font-size: 5.2rem;
+  font-size: 4.9rem;
   color: white;
   position: absolute;
-  top: 620px;
-  left: 655px;
+  top: 675px;
+  left: 640px;
+}
+@media ( max-width:500px ) {
+  .header__text {
+    display: flex;
+    text-align: center;
+    left: 3%;
+    top: 100px;
+    line-height: 1;
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 10px;
+    border: 1px solid black;
+  }
 }
 .header__button {
   color: white;
   position: absolute;
-  top: 684px;
-  left: 50%;
+  top: 745px;
+  left: 49%;
   transform: translateX(-50%);
   width: 250px;
   height: 60px;
@@ -106,6 +176,11 @@ html {
   font-size: 3rem;
   border-color: #95813B;
 }
+@media ( max-width:500px ) {
+  .header__button {
+    top: 270px;
+  }
+}
 .header__button:hover {
   background: #262749;
   color: white;
@@ -114,24 +189,59 @@ html {
 .quotes {
   background-image: url('../images/blue-brick-wall-chair.jpg');
   background-repeat: no-repeat;
-  border: 1px solid red;
   height: 600px;
   background-size: cover;
+  display: flex;
+  position: relative;
+}
+@media ( max-width:500px ) {
+  .quotes {
+    height: auto;
+  }
+}
+.quotes__title {
+  margin: 0 auto;
 }
 .quotes__box {
   display: flex;
+  align-items: center;
+}
+.quotes__box__1 {
+  display: flex;
+  align-items: center;
   width: 60%;
   margin: 0 auto;
   justify-content: space-between;
 }
-.quotes__box__child {
-  border: 1px solid black;
+@media ( max-width:500px ) {
+  .quotes__box__1 {
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+}
+.quotes__box__1__child {
+  display: flex;
+  flex-direction: column;
   height: 100px;
   justify-content: center;
   text-align: center;
   background: #D3DCEC;
   width: 30%;
   height: 250px;
+  border-radius: 10px;
+  border: 2px solid #262749;
+}
+@media ( max-width:500px ) {
+  .quotes__box__1__child {
+    width: 88%;
+    margin: 2%;
+    height: 145px;
+  }
+}
+.quotes__box__1__child__p {
+  font-size: 2rem;
+  padding: 0 4px;
 }
 .mid__page {
   display: flex;
@@ -140,20 +250,48 @@ html {
   width: 60%;
   margin: 0 auto;
   vertical-align: middle;
+  border-left: 1px dashed #A9AFD5;
+  border-right: 1px dashed #A9AFD5;
+}
+@media ( max-width:500px ) {
+  .mid__page {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    border-left: 0;
+    border-right: 0;
+  }
 }
 .mid__page__child {
   width: 48%;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0 10px;
+}
+@media ( max-width:500px ) {
+  .mid__page__child {
+    width: 100%;
+  }
 }
 .mid__page__child__title {
   padding-bottom: 10px;
 }
+@media ( max-width:500px ) {
+  .mid__page__child__title {
+    margin: 0 auto;
+  }
+}
 .mid__page__childimg {
   display: flex;
   align-items: center;
+}
+@media ( max-width:500px ) {
+  .mid__page__childimg {
+    display: flex;
+    flex-direction: row;
+  }
 }
 .mid__page__child .fast {
   display: flex;
@@ -162,5 +300,186 @@ html {
   height: 75px;
   width: 75px;
   padding: 0 5px;
+  margin: 0 auto;
+}
+@media ( max-width:500px ) {
+  .mid__page__child .fast {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media ( max-width:500px ) {
+  .mid__page__child__p {
+    padding: 0 5px;
+    margin: 0 auto;
+  }
+}
+@media ( max-width:500px ) {
+  .yo {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+  }
+}
+.button {
+  width: 60%;
+  margin: 0 auto;
+  height: 180px;
+  position: relative;
+}
+@media ( max-width:500px ) {
+  .button {
+    height: 200px;
+    border-bottom: 0;
+  }
+}
+.button__button {
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  height: 60px;
+  background: #262749;
+  color: white;
+  font-weight: 900;
+  border-radius: 10px;
+  font-size: 3rem;
+  border-color: #95813B;
+}
+@media ( max-width:500px ) {
+  .button__button {
+    width: 400px;
+    height: 100px;
+  }
+}
+.button__button:hover {
+  background: white;
+  color: #262749;
+  font-weight: 900;
+}
+.footer {
+  width: 100%;
+  border-bottom: 1px dashed black;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+@media ( max-width:500px ) {
+  .footer {
+    height: auto;
+    width: 100%;
+    border-top: 1px dashed black;
+  }
+}
+.footer__box {
+  border-top: 1px dashed black;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+@media ( max-width:500px ) {
+  .footer__box {
+    width: 100%;
+  }
+}
+.footer__box__child {
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+  justify-content: top;
+  text-align: center;
+}
+@media ( max-width:500px ) {
+  .footer__box__child {
+    width: 32%;
+  }
+}
+.footer__box__child__title {
+  font-size: 2rem;
+}
+@media ( max-width:500px ) {
+  .footer__box__child__title {
+    text-align: center;
+  }
+}
+.footer__box__child__link {
+  text-decoration: none;
+  color: #262749;
+  font-size: 1.6rem;
+}
+@media ( max-width:500px ) {
+  .footer__box__child__link {
+    text-align: center;
+  }
+}
+.footer__box__child__link2 {
+  margin: 5px 0;
+}
+.footer i {
+  font-size: 5rem;
+}
+@media ( max-width:500px ) {
+  .childOne {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.teamMembers {
+  background-image: url('../images/blue-brick-wall-chair.jpg');
+  padding-top: 85px;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  margin-bottom: 25px;
+}
+.teamMembers__title {
+  font-size: 6rem;
+  text-align: center;
+  margin: 0 auto;
+}
+.teamMembers__child {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+}
+.teamMembers__child__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  width: 45%;
+  margin: 1%;
+  border-radius: 10px;
+  background-color: #262749;
+  color: white;
+}
+.teamMembers__child__item__img {
+  width: 50%;
+  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: 10px;
+}
+.teamMembers__child__item__p {
+  margin-bottom: 10px;
+}
+.title {
+  padding-top: 80px;
+  height: 50px;
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+}
+.title__title {
+  font-size: 6rem;
+  color: #64668D;
+}
+.last-card {
+  display: flex;
+  align-items: center;
   margin: 0 auto;
 }
