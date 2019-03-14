@@ -169,7 +169,6 @@ html {
   transform: translateX(-50%);
   width: 250px;
   height: 60px;
-  background: white;
   color: #262749;
   font-weight: 900;
   border-radius: 10px;
@@ -182,7 +181,6 @@ html {
   }
 }
 .header__button:hover {
-  background: #262749;
   color: white;
   cursor: pointer;
 }
@@ -358,9 +356,9 @@ html {
   }
 }
 .button__button:hover {
-  background: white;
   color: #262749;
   font-weight: 900;
+  cursor: pointer;
 }
 .footer {
   width: 100%;
