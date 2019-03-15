@@ -56,7 +56,9 @@ html {
   }
 }
 .nav__child1 {
-  width: 195px;
+  width: 225px;
+  display: flex;
+  justify-content: space-around;
 }
 @media ( max-width:500px ) {
   .nav__child1 {
@@ -111,10 +113,6 @@ html {
   padding-top: 1px;
   font-weight: 400;
 }
-.nav__child__link:hover {
-  background: #A9AFD5;
-  color: #262749;
-}
 @media ( max-width:500px ) {
   .nav__child__link {
     border-left: none;
@@ -152,13 +150,11 @@ html {
   .header__text {
     display: flex;
     text-align: center;
-    left: 3%;
+    left: 0%;
     top: 100px;
     line-height: 1;
-    background-color: black;
-    opacity: 0.5;
+    background: rgba(38, 39, 73, 0.8);
     border-radius: 10px;
-    border: 1px solid black;
   }
 }
 .header__button {
@@ -169,7 +165,6 @@ html {
   transform: translateX(-50%);
   width: 250px;
   height: 60px;
-  background: white;
   color: #262749;
   font-weight: 900;
   border-radius: 10px;
@@ -182,7 +177,6 @@ html {
   }
 }
 .header__button:hover {
-  background: #262749;
   color: white;
   cursor: pointer;
 }
@@ -238,6 +232,10 @@ html {
     margin: 2%;
     height: 145px;
   }
+}
+.quotes__box__1__child__img {
+  height: 50%;
+  width: 50%;
 }
 .quotes__box__1__child__p {
   font-size: 2rem;
@@ -310,7 +308,7 @@ html {
 }
 @media ( max-width:500px ) {
   .mid__page__child__p {
-    padding: 0 5px;
+    padding: 20px 5px;
     margin: 0 auto;
   }
 }
@@ -354,9 +352,9 @@ html {
   }
 }
 .button__button:hover {
-  background: white;
   color: #262749;
   font-weight: 900;
+  cursor: pointer;
 }
 .footer {
   width: 100%;
@@ -381,6 +379,7 @@ html {
 @media ( max-width:500px ) {
   .footer__box {
     width: 100%;
+    border-top: 0;
   }
 }
 .footer__box__child {
@@ -427,17 +426,12 @@ html {
 }
 .teamMembers {
   background-image: url('../images/blue-brick-wall-chair.jpg');
-  padding-top: 85px;
+  padding-top: 80px;
   display: flex;
   width: 100%;
   margin: 0 auto;
   height: auto;
   margin-bottom: 25px;
-}
-.teamMembers__title {
-  font-size: 6rem;
-  text-align: center;
-  margin: 0 auto;
 }
 .teamMembers__child {
   display: flex;
@@ -445,6 +439,14 @@ html {
   align-items: center;
   width: 60%;
   margin: 0 auto;
+}
+@media ( max-width:500px ) {
+  .teamMembers__child {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 .teamMembers__child__item {
   display: flex;
@@ -457,6 +459,11 @@ html {
   background-color: #262749;
   color: white;
 }
+@media ( max-width:500px ) {
+  .teamMembers__child__item {
+    width: 90%;
+  }
+}
 .teamMembers__child__item__img {
   width: 50%;
   border-radius: 10px;
@@ -468,15 +475,29 @@ html {
   margin-bottom: 10px;
 }
 .title {
+  background: #D3DCEC;
+  width: 100%;
   padding-top: 80px;
   height: 50px;
   margin: 0 auto;
-  width: 60%;
   text-align: center;
+}
+@media ( max-width:500px ) {
+  .title {
+    width: 100%;
+    padding-top: 50px;
+  }
 }
 .title__title {
   font-size: 6rem;
   color: #64668D;
+}
+@media ( max-width:500px ) {
+  .title__title {
+    width: 90%;
+    font-size: 5rem;
+    margin: 0 auto;
+  }
 }
 .last-card {
   display: flex;

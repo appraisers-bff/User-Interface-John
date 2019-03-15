@@ -34,3 +34,43 @@ TweenMax.from('.header__text', 1.5, {x:-300, opacity:0, scale:0.5, /*onComplete:
 //         carousel.style.transform = `translateX(${offset}px)`;
 //         }
 //     })
+
+
+// Top Button
+const topButt = document.querySelector('.header__button')
+
+topButt.addEventListener('mouseover', function(event) {
+    event.target.style.backgroundColor = '#262749';
+})
+
+topButt.addEventListener('mouseout', function(event) {
+event.target.style.backgroundColor = 'white';
+})
+
+
+// Bottom Button 
+const button = document.querySelector('.button__button');
+
+button.addEventListener('mouseover', function(event) {
+        event.target.style.backgroundColor = 'white';
+})
+
+button.addEventListener('mouseout', function(event) {
+    event.target.style.backgroundColor = '#262749';
+})
+
+
+// nav
+const linkBorder = document.querySelectorAll('.nav__child__link');
+
+linkBorder.forEach(function(currentValue) {
+    currentValue.addEventListener('mouseover', function(event) {
+        event.target.style.backgroundColor = '#A9AFD5';
+        event.target.style.color = '#262749';
+    })
+    
+    currentValue.addEventListener('mouseout', function(event) {
+        event.target.style.backgroundColor = '#262749';
+        event.target.style.color = 'white';
+    })
+})

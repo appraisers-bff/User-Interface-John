@@ -4,10 +4,12 @@
     height: 180px;
     position: relative;
     // border-bottom: 1px dashed @dark-slate-gray;
+
      
     @media @mobile {
         height: 200px;
         border-bottom: 0;
+
     }
 
     &__button {
@@ -23,6 +25,7 @@
         border-radius: 10px;
         font-size: 3rem;
         border-color: @sienna;
+        // box-shadow: 5px 10px;
 
         @media @mobile {
             width: 400px;
@@ -30,9 +33,12 @@
         }
 
         &:hover {
-            background: @white;
+            // background: @white;
             color: @dark-slate-gray;
             font-weight: 900;
+            cursor: pointer;
+            // box-shadow: 5px 10px;
         }
     }
 }
+

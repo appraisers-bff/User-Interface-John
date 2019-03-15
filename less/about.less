@@ -1,17 +1,11 @@
 .teamMembers {
     background-image: url('../images/blue-brick-wall-chair.jpg');
-    padding-top: 85px;
+    padding-top: 80px;
     display: flex;
     width: 100%;
     margin: 0 auto;
     height: auto;
     margin-bottom: 25px;
-
-    &__title {
-        font-size: 6rem;
-        text-align: center;
-        margin: 0 auto;
-    }
 
     &__child {
         display: flex;
@@ -20,7 +14,12 @@
         width: 60%;
         margin: 0 auto;
             
-
+        @media @mobile {
+            display: flex; 
+            flex-direction: column; 
+            width: 100%;
+            margin: 0 auto;
+        }
 
         &__item {
             display: flex;
@@ -32,6 +31,10 @@
             border-radius: 10px;
             background-color: @dark-slate-gray;
             color: @white;
+
+            @media @mobile {
+                width: 90%;
+            }
             
             &__img {
                 width: 50%;
@@ -53,17 +56,30 @@
 }
 
 .title {
+    background: @lighter-steel-blue;
+    width: 100%;
     padding-top: 80px;
     height: 50px;
     margin: 0 auto;
-    width: 60%;
+    // width: 60%;
     text-align: center;
     // text-decoration: underline;
+
+    @media @mobile {
+        width: 100%;
+        padding-top: 50px;
+    }
 
 
     &__title {
         font-size: 6rem;
         color: @slate-gray;
+
+        @media @mobile {
+            width: 90%;
+            font-size: 5rem;
+            margin: 0 auto;
+        }
     }
 }
 
